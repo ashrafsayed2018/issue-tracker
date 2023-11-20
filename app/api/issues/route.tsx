@@ -23,9 +23,3 @@ const newIssue = await prisma.issue.create({
 return NextResponse.json(newIssue,{status:201})
 }
 
-export function GET() {
-    
-    return NextResponse.json({
-        message:"You have successfully"
-    })
-}
